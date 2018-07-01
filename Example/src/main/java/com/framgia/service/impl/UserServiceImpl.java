@@ -26,4 +26,14 @@ public class UserServiceImpl implements UserService {
 		this.userDAO = userDAO;
 	}
 
+	@Override
+	public boolean createUser(User user) {
+		try {
+			userDAO.createUsser(user);
+			return true;
+		} catch (Exception e) {
+			throw e;
+		}
+	}
+
 }

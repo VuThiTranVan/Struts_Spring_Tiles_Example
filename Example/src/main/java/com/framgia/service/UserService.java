@@ -6,4 +6,5 @@ import com.framgia.model.User;
 
 public interface UserService {
 	List<User> getUsers(String username);
+	boolean createUser(User user);
 }
